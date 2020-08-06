@@ -1,0 +1,208 @@
+.main-screen {
+  width: 80%;
+  display: flex;
+  flex-flow: column wrap;
+  min-height: 80px;
+  max-height: auto;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  padding: 1em;
+  border: solid rgba(119, 119, 50, 0.795) 3px;
+  border-radius: 25px;
+  background-color: whitesmoke; }
+  .main-screen .screenoperation {
+    width: 100%;
+    min-height: 50px;
+    padding: .3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    border-bottom: 3px solid rgba(119, 119, 50, 0.795); }
+  .main-screen .screenresult {
+    width: 100%;
+    min-height: 75px;
+    padding: .3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px; }
+
+.calc-shape {
+  height: 80%;
+  width: 80%;
+  background-color: rgba(81, 80, 92, 0.795);
+  max-width: 75%;
+  display: grid;
+  flex-flow: row wrap;
+  justify-items: center;
+  padding: .3em;
+  padding-bottom: 2em;
+  padding-top: 2em;
+  border-radius: 15px;
+  margin-bottom: 50px; }
+  .calc-shape .containerbutton {
+    display: grid;
+    margin-right: auto;
+    margin-left: auto;
+    grid-template-areas: "btng1 btng2"; }
+    @media screen and (max-width: 960px) {
+      .calc-shape .containerbutton {
+        grid-template-areas: "btng1" "btng2"; } }
+
+.btn-group1 {
+  display: grid;
+  justify-items: center;
+  width: 35%;
+  height: auto;
+  padding: 1em;
+  row-gap: 1em;
+  column-gap: .5em;
+  grid-area: btng1;
+  grid-template-areas: " btn1 btn2 btn3" " btn4 btn5 btn6" " btn7 btn8 btn9" " btnequal btn0 btncoma" " btnclr btnclr btnclr"; }
+  .btn-group1 .btn {
+    min-width: 3.5em;
+    min-height: 3.5em;
+    max-width: 4em;
+    max-height: 4em;
+    border-radius: .7em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(41, 41, 204, 0.61);
+    color: whitesmoke;
+    font-size: 19px;
+    font-weight: 700; }
+    .btn-group1 .btn:active {
+      background-color: lightblue;
+      box-shadow: darkblue 3px 3px 5px;
+      color: darkblue; }
+  .btn-group1 .btn1 {
+    grid-area: btn1; }
+  .btn-group1 .btn2 {
+    grid-area: btn2; }
+  .btn-group1 .btn3 {
+    grid-area: btn3; }
+  .btn-group1 .btn4 {
+    grid-area: btn4; }
+  .btn-group1 .btn5 {
+    grid-area: btn5; }
+  .btn-group1 .btn6 {
+    grid-area: btn6; }
+  .btn-group1 .btn7 {
+    grid-area: btn7; }
+  .btn-group1 .btn8 {
+    grid-area: btn8; }
+  .btn-group1 .btn9 {
+    grid-area: btn9; }
+  .btn-group1 .btnclr {
+    grid-area: btnclr;
+    width: 15em;
+    height: 4em;
+    background-color: yellow;
+    color: darkblue;
+    border-radius: .7em; }
+  .btn-group1 .btncoma {
+    grid-area: btncoma; }
+  .btn-group1 .btnequal {
+    grid-area: btnequal; }
+
+.btn-group2 {
+  display: grid;
+  justify-items: center;
+  width: 35%;
+  height: auto;
+  padding: 1em;
+  row-gap: 1em;
+  grid-area: btng2;
+  column-gap: .5em;
+  grid-template-areas: " btnsuma btnresta btnmult" " btndiv btnporcent btnexpo" " btnsquare btnsquarecubic ." " btntg btnsin btncos" " btnlog btnln ."; }
+  .btn-group2 .btn {
+    min-width: 3.5em;
+    min-height: 3.5em;
+    max-width: 4em;
+    max-height: 4em;
+    border-radius: .7em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(41, 41, 204, 0.61);
+    color: whitesmoke;
+    font-size: 19px;
+    font-weight: 700; }
+    .btn-group2 .btn:active {
+      background-color: lightblue;
+      box-shadow: darkblue 3px 3px 5px;
+      color: darkblue; }
+  .btn-group2 .btnsuma {
+    grid-area: btnsuma; }
+  .btn-group2 .btnresta {
+    grid-area: btnresta; }
+  .btn-group2 .btnmult {
+    grid-area: btnmult; }
+  .btn-group2 .btndiv {
+    grid-area: btndiv; }
+  .btn-group2 .btnporcent {
+    grid-area: btnporcent; }
+  .btn-group2 .btnexpo {
+    grid-area: btnexpo; }
+  .btn-group2 .btnsquare {
+    grid-area: btnsquare; }
+  .btn-group2 .btnsin {
+    grid-area: btnsin; }
+  .btn-group2 .btncos {
+    grid-area: btncos; }
+  .btn-group2 .btntg {
+    grid-area: btntg; }
+  .btn-group2 .btnsquare {
+    grid-area: btnsquare; }
+  .btn-group2 .btncubic {
+    grid-area: btnsquarecubic; }
+  .btn-group2 .btnlog {
+    grid-area: btnlog; }
+  .btn-group2 .btnln {
+    grid-area: btnln; }
+
+.sup {
+  line-height: 10px; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ranchers"; }
+
+.container-main {
+  background-color: lightblue;
+  height: auto;
+  width: 100%;
+  background-image: url(../../img/birdart.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center; }
+  .container-main .title {
+    display: inline-block;
+    width: 80%;
+    text-align: center;
+    color: #23414b;
+    letter-spacing: .2em;
+    text-shadow: rgba(121, 121, 214, 0.61) 5px 5px 3px;
+    padding: 1em;
+    font-size: 7vmin; }
+
+@font-face {
+  font-family: "Abril";
+  src: local("Abril"), url(../../fonts/Abril.ttf);
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "Ranchers";
+  src: local("Ranchers"), url(../../fonts/Ranchers.ttf);
+  font-weight: normal;
+  font-style: normal; }
+
+/*# sourceMappingURL=calculadora.css.map */

@@ -1,0 +1,66 @@
+.btn-group2{
+    display:grid;
+    justify-items: center;
+    width: 35%;
+    height:auto  ;
+    padding: 1em;
+    row-gap: 1em;
+    grid-area:btng2;
+    column-gap: .5em;
+    grid-template-areas:
+    
+     
+    " btnsuma btnresta btnmult"
+    " btndiv btnporcent btnexpo"
+    " btnsquare btnsquarecubic ."
+    " btntg btnsin btncos"
+    " btnlog btnln .";
+    
+    .btn{
+       @include button;
+     
+    }
+    .btnsuma{
+        grid-area: btnsuma;
+    }
+    .btnresta{
+        grid-area: btnresta;
+    }
+    .btnmult{
+        grid-area: btnmult;
+    }
+    .btndiv{
+        grid-area: btndiv;
+    }
+    .btnporcent{
+        grid-area: btnporcent;
+    }
+    .btnexpo{
+        grid-area: btnexpo;
+    }
+    .btnsquare{
+        grid-area: btnsquare;
+    }
+    .btnsin{
+        grid-area:btnsin;
+    }
+    .btncos{
+        grid-area:btncos;
+    }
+    .btntg{
+        grid-area:btntg;
+    }
+    .btnsquare{
+        grid-area:btnsquare;
+    }
+    .btncubic{
+        grid-area: btnsquarecubic;
+    }
+    .btnlog{
+        grid-area:btnlog;
+    }
+    .btnln{
+        grid-area:btnln;
+    }
+}
+.sup{line-height: 10px;}
