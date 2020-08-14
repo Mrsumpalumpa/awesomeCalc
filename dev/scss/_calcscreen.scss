@@ -1,5 +1,5 @@
 .main-screen{
-    
+    min-width: 260px;
     width: 80%;
     display: flex;
     flex-flow: column wrap;  
@@ -8,14 +8,14 @@
     display:flex;
     align-content: center;
     justify-content: center;
-    padding:1em;
-    @include border-gradient(rgb(255, 115, 0),rgb(226, 226, 62) , 1px );
+    padding:.5em;
+    @include border-gradient(rgb(255, 115, 0),rgb(226, 226, 62) , 4px );
     border-radius: 25px;
-    background-color: rgb(243, 237, 150);
+    background-color: rgba(214, 240, 172, 0.856);
     .screenoperation{
         width: 100%;
         min-height: 50px;
-        padding: .3em;
+        padding: .2em;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -25,7 +25,7 @@
     .screenresult{
         width: 100%;
         min-height: 75px; ;
-        padding: .3em;
+        padding: .2em;
         display: flex;
         align-items: center;
         justify-content: center;

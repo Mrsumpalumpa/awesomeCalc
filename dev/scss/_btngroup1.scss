@@ -6,8 +6,9 @@
     height: auto;
     padding: 1em;
     row-gap: 1em;
-    column-gap: .7em;
+    column-gap: .9em;
     grid-area:btng1;
+    margin-top: 15px;
     grid-template-areas: 
     " btn1 btn2 btn3"
     " btn4 btn5 btn6"
@@ -53,12 +54,13 @@
         color: black;
         border-radius: .7em;
         border: none;
-        @include border-gradient(rgb(255, 115, 0),rgb(226, 226, 62) , 1px );
+        @include border-gradient(rgb(255, 115, 0),rgb(226, 226, 62) , 3px );
         &:active{
             background-color: rgb(238, 126, 51);
             box-shadow: rgb(139, 51, 0) 3px 3px 5px;
             color:rgb(0, 0, 0);
             transform: scale(1.1);
+            font-weight: 900;;
         }
         
     }

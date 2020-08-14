@@ -4,12 +4,12 @@
     width: 35%;
     height:auto  ;
     padding: 1em;
+    
     row-gap: 1em;
     grid-area:btng2;
-    column-gap: .7em;
-    grid-template-areas:
-    
-     
+    column-gap: .9em;
+    margin-top: 15px;
+    grid-template-areas:   
     " btnsuma btnresta btnmult"
     " btndiv btnporcent btnexpo"
     " btnsquare btnsquarecubic ."
@@ -37,6 +37,10 @@
     }
     .btnexpo{
         grid-area: btnexpo;
+        sup{
+            vertical-align: super;
+            font-size: 12px;
+        }
     }
     .btnsquare{
         grid-area: btnsquare;

@@ -1,0 +1,44 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Inconsolata" ;
+     
+}
+.container-main{
+    background-color: lightblue;
+    height:auto;
+    width: 100%;
+    background-image: url(../../img/Slanted-Gradient.svg);
+    background-size:  cover;
+    background-repeat: no-repeat;
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    
+    .title{
+        display: flex;
+        width: 80%;
+        align-items: center;
+        justify-content: space-evenly;
+        color:  rgb(206, 198, 87);
+        letter-spacing: .2em;
+        text-shadow: rgba(59, 59, 68, 0.61) 5px 5px 3px;
+        padding: .5em;
+        font-size: 7vmin;     
+        img{
+            max-width: 70px;
+            max-height: 70px;           
+            animation: rotar 5s linear .3s infinite; 
+        }
+    }
+   
+}
+@keyframes rotar{
+    0% {transform: rotate(0deg);}
+    25%{transform: rotate(90deg);}
+    50%{transform: rotate(180deg);}
+    75%{transform: rotate(270deg);}
+    100%{transform: rotate(360deg);}
+}
