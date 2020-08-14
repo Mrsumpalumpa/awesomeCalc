@@ -1,19 +1,41 @@
+$fontcolor: black;
 @mixin button{
     min-width: 3.5em;
     min-height: 3.5em;
     max-width: 4em;
     max-height: 4em;
+    border:solid 3px transparent;
+    @include border-gradient(rgb(255, 115, 0),rgb(226, 226, 62) , 1px );
+    
     border-radius: .7em;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(41, 41, 204, 0.61);
-    color: whitesmoke;
+    background-color: rgba(221, 195, 46, 0.87);
+    color:  $fontcolor;
     font-size: 19px;
     font-weight: 700;
     &:active{
-        background-color: lightblue;
-        box-shadow: darkblue 3px 3px 5px;
-        color:darkblue;
+        background-color: rgb(238, 126, 51);
+        box-shadow: rgb(139, 51, 0) 3px 3px 5px;
+        color:rgb(0, 0, 0);
+        transform: scale(1.1);
+       
     }
 }
+
+/*stolen sass mixin :P im sry*/
+@mixin border-gradient($from, $to, $weight: 0) {
+    $mix-main: mix($from, $to);
+    $mix-sub-from: mix($mix-main, $from);
+    $mix-sub-to: mix($mix-main, $to);
+    
+    box-shadow: 0 1px 0 $weight rgba($mix-sub-to, .25),
+                0 -1px 0 $weight rgba($mix-sub-from, .25),
+                1px 0 0 $weight rgba($mix-sub-to, .25),
+                -1px 0 0 $weight  rgba($mix-sub-from, .25),
+                1px -1px 0 $weight rgba($mix-main, .5),
+                -1px 1px 0 $weight rgba($mix-main, .5),
+                1px 1px 0 $weight rgba($to, .75),
+                -1px -1px 0 $weight rgba($from, .75);
+  }

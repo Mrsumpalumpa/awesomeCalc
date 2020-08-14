@@ -1,3 +1,4 @@
+
 .btn-group1{
     display: grid;
     justify-items: center;
@@ -43,14 +44,23 @@
     }
     .btn9{
         grid-area:btn9;
-    }
+    }   
     .btnclr{
         grid-area:btnclr;
         width: 15em;
         height: 4em;
-        background-color: yellow;
-        color: darkblue;
+        background-color: rgb(206, 198, 87);
+        color: black;
         border-radius: .7em;
+        border: none;
+        @include border-gradient(rgb(255, 115, 0),rgb(226, 226, 62) , 1px );
+        &:active{
+            background-color: rgb(238, 126, 51);
+            box-shadow: rgb(139, 51, 0) 3px 3px 5px;
+            color:rgb(0, 0, 0);
+            transform: scale(1.1);
+        }
+        
     }
     .btncoma{
         grid-area:btncoma;

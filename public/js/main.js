@@ -80,11 +80,18 @@ cero.addEventListener('click', ()=>{
     screenResult.textContent += "0";
 })
 equal.addEventListener('click', ()=>{
-    screenOperation.textContent += " = "
-    operator2 = screenResult.textContent;
-    console.log(operator2);
-    solver();
-    screenResult.textContent = result;
+    if (operator1.textContent!="" && operator2.textContent!=""){
+        screenOperation.textContent += " = "
+        operator2 = screenResult.textContent;
+        solver();
+        operation = "="
+        screenResult.textContent = result;
+        operator1 = "";
+        operator2 = "";
+        operation = ""; 
+    
+    }
+   
     
 })
 coma.addEventListener('click', ()=>{
