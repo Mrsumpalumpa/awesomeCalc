@@ -84,12 +84,11 @@ equal.addEventListener('click', ()=>{
         screenOperation.textContent += " = "
         operator2 = screenResult.textContent;
         solver();
-        operation = "="
+        
         screenResult.textContent = result;
         operator1 = "";
         operator2 = "";
         operation = ""; 
-    
     }
    
     
@@ -112,108 +111,95 @@ pi.addEventListener('click', ()=>{
 
 addition.addEventListener('click', ()=>{
     operator1 = screenResult.textContent;
-    operation = "+";
-    console.log(operation)
+    operation = "+";    
     screenOperation.textContent += " + ";
     screenResult.textContent = "";
     operator2 = screenResult.textContent;
-    console.log(operator1)
+    
     
 
 })
 substraction.addEventListener('click', ()=>{
     operator1 = screenResult.textContent;
-    operation = "-";
-    console.log(operation)
+    operation = "-";   
     screenOperation.textContent += " - ";
     screenResult.textContent = "";
     operator2 = screenResult.textContent;
-    console.log(operator1)    
+       
     
 })
 multiplication.addEventListener('click', ()=>{
     operator1 = screenResult.textContent;
-    operation = "*";
-    console.log(operation)
+    operation = "*";    
     screenOperation.textContent += " * ";
     screenResult.textContent = "";
     operator2 = screenResult.textContent;
-    console.log(operator1) 
+    
 })
 division.addEventListener('click', ()=>{
     operator1 = screenResult.textContent;
-    operation = "/";
-    console.log(operation)
+    operation = "/";    
     screenOperation.textContent += " / ";
     screenResult.textContent = "";
     operator2 = screenResult.textContent;
-    console.log(operator1) 
+    
 })
 percent.addEventListener('click', ()=>{
     operator1 = screenResult.textContent;
-    operation = "%";
-    console.log(operation)
+    operation = "%";    
     screenOperation.textContent += " % ";
     screenResult.textContent = "";
     operator2 = screenResult.textContent;
-    console.log(operator1)
+    
 })
 exp.addEventListener('click', ()=>{
     operator1 = screenResult.textContent;
-    operation = "^";
-    console.log(operation)
+    operation = "^";    
     screenOperation.textContent += " exp ";
     screenResult.textContent = "";
     operator2 = screenResult.textContent;
-    console.log(operator1);
+   
 })
 sqr2.addEventListener('click', ()=>{
     operator1 = screenResult.textContent;
-    operation = "sqr";
-    console.log(operation)
+    operation = "sqr";   
     screenOperation.textContent += " sqr ";
     screenResult.textContent = "";
 
 })
 sqr3.addEventListener('click', ()=>{
     operator1 = screenResult.textContent;
-    operation = "sqr3";
-    console.log(operation)
+    operation = "sqr3";   
     screenOperation.textContent += " sqr3 ";
     screenResult.textContent = "";
 })
 sinx.addEventListener('click', ()=>{
     operator1 = screenResult.textContent;
-    operation = "sin";
-    console.log(operation)
+    operation = "sin";    
     screenOperation.textContent += " sin()";
     screenResult.textContent = "";
 })
 cosx.addEventListener('click', ()=>{
     operator1 = screenResult.textContent;
-    operation = "cos";
-    console.log(operation)
+    operation = "cos";    
     screenOperation.textContent += " cos()";
     screenResult.textContent = "";
 })
 tgx.addEventListener('click', ()=>{
     operator1 = screenResult.textContent;
-    operation = "tg";
-    console.log(operation)
+    operation = "tg";    
     screenOperation.textContent += " tg()";
     screenResult.textContent = "";
 })
 logx.addEventListener('click', ()=>{
     operator1 = screenResult.textContent;
-    operation = "log";
-    console.log(operation)
+    operation = "log";    
     screenOperation.textContent += " log()";
     screenResult.textContent = "";
 })
 lnx.addEventListener('click', ()=>{
     operator1 = screenResult.textContent;
-    operation = "ln";
-    console.log(operation)
+    operation = "ln";    
     screenOperation.textContent += " ln()";
     screenResult.textContent = "";
 })
