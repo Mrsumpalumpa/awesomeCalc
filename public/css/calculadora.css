@@ -1,5 +1,6 @@
 /*stolen sass mixin :P im sry*/
 .main-screen {
+  min-width: 260px;
   width: 80%;
   display: flex;
   flex-flow: column wrap;
@@ -8,14 +9,14 @@
   display: flex;
   align-content: center;
   justify-content: center;
-  padding: 1em;
-  box-shadow: 0 1px 0 1px rgba(234, 199, 47, 0.25), 0 -1px 0 1px rgba(248, 143, 16, 0.25), 1px 0 0 1px rgba(234, 199, 47, 0.25), -1px 0 0 1px rgba(248, 143, 16, 0.25), 1px -1px 0 1px rgba(241, 171, 31, 0.5), -1px 1px 0 1px rgba(241, 171, 31, 0.5), 1px 1px 0 1px rgba(226, 226, 62, 0.75), -1px -1px 0 1px rgba(255, 115, 0, 0.75);
+  padding: .5em;
+  box-shadow: 0 1px 0 4px rgba(234, 199, 47, 0.25), 0 -1px 0 4px rgba(248, 143, 16, 0.25), 1px 0 0 4px rgba(234, 199, 47, 0.25), -1px 0 0 4px rgba(248, 143, 16, 0.25), 1px -1px 0 4px rgba(241, 171, 31, 0.5), -1px 1px 0 4px rgba(241, 171, 31, 0.5), 1px 1px 0 4px rgba(226, 226, 62, 0.75), -1px -1px 0 4px rgba(255, 115, 0, 0.75);
   border-radius: 25px;
-  background-color: #f3ed96; }
+  background-color: rgba(214, 240, 172, 0.856); }
   .main-screen .screenoperation {
     width: 100%;
     min-height: 50px;
-    padding: .3em;
+    padding: .2em;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -24,17 +25,17 @@
   .main-screen .screenresult {
     width: 100%;
     min-height: 75px;
-    padding: .3em;
+    padding: .2em;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 30px; }
 
 .calc-shape {
-  height: 80%;
-  width: 80%;
+  height: auto;
+  min-width: 300px;
+  width: auto;
   background-color: rgba(182, 155, 115, 0.795);
-  max-width: 75%;
   display: grid;
   flex-flow: row wrap;
   justify-items: center;
@@ -59,16 +60,17 @@
   height: auto;
   padding: 1em;
   row-gap: 1em;
-  column-gap: .5em;
+  column-gap: .9em;
   grid-area: btng1;
+  margin-top: 15px;
   grid-template-areas: " btn1 btn2 btn3" " btn4 btn5 btn6" " btn7 btn8 btn9" " btnequal btn0 btncoma" " btnclr btnclr btnclr"; }
   .btn-group1 .btn {
     min-width: 3.5em;
     min-height: 3.5em;
     max-width: 4em;
     max-height: 4em;
-    border: solid 3px transparent;
-    box-shadow: 0 1px 0 1px rgba(234, 199, 47, 0.25), 0 -1px 0 1px rgba(248, 143, 16, 0.25), 1px 0 0 1px rgba(234, 199, 47, 0.25), -1px 0 0 1px rgba(248, 143, 16, 0.25), 1px -1px 0 1px rgba(241, 171, 31, 0.5), -1px 1px 0 1px rgba(241, 171, 31, 0.5), 1px 1px 0 1px rgba(226, 226, 62, 0.75), -1px -1px 0 1px rgba(255, 115, 0, 0.75);
+    border: none;
+    box-shadow: 0 1px 0 3px rgba(234, 199, 47, 0.25), 0 -1px 0 3px rgba(248, 143, 16, 0.25), 1px 0 0 3px rgba(234, 199, 47, 0.25), -1px 0 0 3px rgba(248, 143, 16, 0.25), 1px -1px 0 3px rgba(241, 171, 31, 0.5), -1px 1px 0 3px rgba(241, 171, 31, 0.5), 1px 1px 0 3px rgba(226, 226, 62, 0.75), -1px -1px 0 3px rgba(255, 115, 0, 0.75);
     border-radius: .7em;
     display: flex;
     justify-content: center;
@@ -108,12 +110,13 @@
     color: black;
     border-radius: .7em;
     border: none;
-    box-shadow: 0 1px 0 1px rgba(234, 199, 47, 0.25), 0 -1px 0 1px rgba(248, 143, 16, 0.25), 1px 0 0 1px rgba(234, 199, 47, 0.25), -1px 0 0 1px rgba(248, 143, 16, 0.25), 1px -1px 0 1px rgba(241, 171, 31, 0.5), -1px 1px 0 1px rgba(241, 171, 31, 0.5), 1px 1px 0 1px rgba(226, 226, 62, 0.75), -1px -1px 0 1px rgba(255, 115, 0, 0.75); }
+    box-shadow: 0 1px 0 3px rgba(234, 199, 47, 0.25), 0 -1px 0 3px rgba(248, 143, 16, 0.25), 1px 0 0 3px rgba(234, 199, 47, 0.25), -1px 0 0 3px rgba(248, 143, 16, 0.25), 1px -1px 0 3px rgba(241, 171, 31, 0.5), -1px 1px 0 3px rgba(241, 171, 31, 0.5), 1px 1px 0 3px rgba(226, 226, 62, 0.75), -1px -1px 0 3px rgba(255, 115, 0, 0.75); }
     .btn-group1 .btnclr:active {
       background-color: #ee7e33;
       box-shadow: #8b3300 3px 3px 5px;
       color: black;
-      transform: scale(1.1); }
+      transform: scale(1.1);
+      font-weight: 900; }
   .btn-group1 .btncoma {
     grid-area: btncoma; }
   .btn-group1 .btnequal {
@@ -127,15 +130,16 @@
   padding: 1em;
   row-gap: 1em;
   grid-area: btng2;
-  column-gap: .5em;
+  column-gap: .9em;
+  margin-top: 15px;
   grid-template-areas: " btnsuma btnresta btnmult" " btndiv btnporcent btnexpo" " btnsquare btnsquarecubic ." " btntg btnsin btncos" " btnlog btnln ."; }
   .btn-group2 .btn {
     min-width: 3.5em;
     min-height: 3.5em;
     max-width: 4em;
     max-height: 4em;
-    border: solid 3px transparent;
-    box-shadow: 0 1px 0 1px rgba(234, 199, 47, 0.25), 0 -1px 0 1px rgba(248, 143, 16, 0.25), 1px 0 0 1px rgba(234, 199, 47, 0.25), -1px 0 0 1px rgba(248, 143, 16, 0.25), 1px -1px 0 1px rgba(241, 171, 31, 0.5), -1px 1px 0 1px rgba(241, 171, 31, 0.5), 1px 1px 0 1px rgba(226, 226, 62, 0.75), -1px -1px 0 1px rgba(255, 115, 0, 0.75);
+    border: none;
+    box-shadow: 0 1px 0 3px rgba(234, 199, 47, 0.25), 0 -1px 0 3px rgba(248, 143, 16, 0.25), 1px 0 0 3px rgba(234, 199, 47, 0.25), -1px 0 0 3px rgba(248, 143, 16, 0.25), 1px -1px 0 3px rgba(241, 171, 31, 0.5), -1px 1px 0 3px rgba(241, 171, 31, 0.5), 1px 1px 0 3px rgba(226, 226, 62, 0.75), -1px -1px 0 3px rgba(255, 115, 0, 0.75);
     border-radius: .7em;
     display: flex;
     justify-content: center;
@@ -161,6 +165,9 @@
     grid-area: btnporcent; }
   .btn-group2 .btnexpo {
     grid-area: btnexpo; }
+    .btn-group2 .btnexpo sup {
+      vertical-align: super;
+      font-size: 12px; }
   .btn-group2 .btnsquare {
     grid-area: btnsquare; }
   .btn-group2 .btnsin {
@@ -185,7 +192,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Ranchers"; }
+  font-family: "Inconsolata"; }
 
 .container-main {
   background-color: lightblue;
@@ -199,15 +206,31 @@
   flex-flow: row wrap;
   justify-content: center; }
   .container-main .title {
-    display: inline-block;
+    display: flex;
     width: 80%;
-    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
     color: #cec657;
     letter-spacing: .2em;
-    text-shadow: rgba(121, 121, 214, 0.61) 5px 5px 3px;
-    padding: 1em;
+    text-shadow: rgba(59, 59, 68, 0.61) 5px 5px 3px;
+    padding: .5em;
     font-size: 7vmin; }
+    .container-main .title img {
+      max-width: 70px;
+      max-height: 70px;
+      animation: rotar 5s linear .3s infinite; }
 
+@keyframes rotar {
+  0% {
+    transform: rotate(0deg); }
+  25% {
+    transform: rotate(90deg); }
+  50% {
+    transform: rotate(180deg); }
+  75% {
+    transform: rotate(270deg); }
+  100% {
+    transform: rotate(360deg); } }
 @font-face {
   font-family: "Abril";
   src: local("Abril"), url(../../fonts/Abril.ttf);
@@ -216,6 +239,11 @@
 @font-face {
   font-family: "Ranchers";
   src: local("Ranchers"), url(../../fonts/Ranchers.ttf);
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "Inconsolata";
+  src: local("Inconsolata"), url(../../fonts/Inconsolata.ttf);
   font-weight: normal;
   font-style: normal; }
 
